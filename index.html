@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spinning loader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes load{
+            from{rotate: 0deg;}
+            to{rotate: 360deg;}
+        }
+        #div1{
+            animation: load 1s infinite;
+            animation-fill-mode: forwards;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="div1" class="w-20 border-gray-500 border-8 border-t-yellow-300 rounded-full h-20  ml-[47.7%] mt-[23.5%]" >
+    </div>
+</body>
+</html>
